@@ -116,13 +116,10 @@ class _EventBoxState extends State<EventBox> with TickerProviderStateMixin {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: <Widget>[
                       Container(
                         child: AnimatedTextKit(
                           repeatForever: true,

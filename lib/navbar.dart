@@ -38,11 +38,16 @@ class DesktopNavBar extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Column(
-                    children: [
+                    children: <Widget>[
                       Row(
-                        children: [
-                          CircleAvatar(
-                            child: Image.asset('logo.png'),
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: CircleAvatar(
+                              backgroundImage: Image.asset('images/logo.png')
+                                  .image,
+                              radius: 70,
+                            ),
                           ),
                           Column(
                             children: [
@@ -107,7 +112,7 @@ class DesktopNavBar extends StatelessWidget {
                         height: MediaQuery.of(context).size.height / 6,
                         width: 200,
                         decoration: BoxDecoration(
-                          color: Colors.amber,
+                          color: Colors.green,
                           borderRadius: BorderRadius.circular(35),
                         ),
                         padding: EdgeInsets.only(top: 30, left: 35),
@@ -121,7 +126,7 @@ class DesktopNavBar extends StatelessWidget {
                               textStyle: TextStyle(
                                 fontSize: 50,
                                 fontWeight: FontWeight.w900,
-                                color: Colors.green,
+                                color: Colors.white,
                               ),
                             ),
                           ],
