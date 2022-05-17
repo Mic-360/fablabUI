@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Center(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
           child: Container(
             decoration: BoxDecoration(
